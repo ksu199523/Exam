@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Lato-Bold";
+  src: url('../assets/fonts/Lato-Bold.woff2') format("woff2"),
+    url('../assets/fonts/Lato-Bold.woff') format("woff");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../assets/fonts/Lato-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Lato-Regular.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Lato-light";
+  src: url("../assets/fonts/Lato-Light.woff2") format("woff2"),
+    url("../assets/fonts/Lato-Light.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../assets/fonts/PlayfairDisplay.woff2") format("woff2"),
+    url("../assets/fonts/PlayfairDisplay.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay-Italic";
+  src: url("../assets/fonts/PlayfairDisplay-Italic.woff2") format("woff2"),
+    url("../assets/fonts/PlayfairDisplay-Italic.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}

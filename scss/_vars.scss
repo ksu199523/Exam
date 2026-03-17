@@ -1,0 +1,36 @@
+$text-font-family: Lato-Light, sans-serif;
+$container-width: 1190px;
+$container-big-width: 1460px;
+$title-font-family: PlayfairDisplay, sans-serif;
+$accent-font-family: PlayfairDisplay-Italic, sans-serif;
+$item-font-family: Lato-Regular, sans-serif;
+$button-font-family: Lato-Bold, sans-serif;
+$color-primary: #262A3F;
+$color-primary-dark: #ffffff;
+$accent-color: #F1897B;
+$accent-color-dark: #53F3CD;
+
+
+%title {
+  font-family: $title-font-family, sans-serif;
+  font-size: clamp(24px, 3vw, 44px);
+  line-height: 1.18;
+  color: $color-primary;
+  font-weight: 400;
+}
+
+%text {
+  font-family: $text-font-family, sans-serif;
+  font-size: clamp(12px, 3vw, 18px);
+  line-height: 1.44;
+  color: $color-primary;
+  opacity: 0.8;
+}
+
+%nav-text {
+  font-family: $item-font-family, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $color-primary;
+  letter-spacing: 0.08em;
+}

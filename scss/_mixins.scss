@@ -1,0 +1,7 @@
+@use 'vars' as v;
+
+@mixin flex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
