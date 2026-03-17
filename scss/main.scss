@@ -286,6 +286,7 @@ body.lock {
     padding-top: clamp(60px, 8vw, 120px);
 
     &__content {
+        background-image: url("../assets/img/quote-bg.jpg");
         background-image: -webkit-image-set(url("../assets/img/quote-bg.avif") type("image/avif"),
                 url("../assets/img/quote-bg.webp") type("image/webp"),
                 url("../assets/img/quote-bg.jpg") type("image/jpeg"));
