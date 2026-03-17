@@ -1,10 +1,7 @@
-$text-font-family: Lato-Light, sans-serif;
+$text-font-family: Lato, sans-serif;
 $container-width: 1190px;
 $container-big-width: 1460px;
 $title-font-family: PlayfairDisplay, sans-serif;
-$accent-font-family: PlayfairDisplay-Italic, sans-serif;
-$item-font-family: Lato-Regular, sans-serif;
-$button-font-family: Lato-Bold, sans-serif;
 $color-primary: #262A3F;
 $color-primary-dark: #ffffff;
 $accent-color: #F1897B;
@@ -24,13 +21,15 @@ $accent-color-dark: #53F3CD;
   font-size: clamp(12px, 3vw, 18px);
   line-height: 1.44;
   color: $color-primary;
-  opacity: 0.8;
+  opacity: 0.6;
+  font-weight: 300;
 }
 
 %nav-text {
-  font-family: $item-font-family, sans-serif;
+  font-family: $text-font-family, sans-serif;
   font-size: 14px;
   line-height: 1.71;
   color: $color-primary;
   letter-spacing: 0.08em;
+  font-weight: 400;
 }

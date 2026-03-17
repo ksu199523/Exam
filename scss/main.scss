@@ -41,7 +41,9 @@ body.lock {
 
 .title-accent {
     color: #85BBB1;
-    font-family: v.$accent-font-family;
+    font-family: v.$title-font-family;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .title {
@@ -53,11 +55,12 @@ body.lock {
 
 .text {
     @extend %text;
-    opacity: .8;
+    opacity: 0.8;
 }
 
 .link-accent {
-    font-family: v.$button-font-family;
+    font-family: v.$text-font-family;
+    font-weight: 800;
     font-size: clamp(14px, 3vw, 20px);
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -126,7 +129,7 @@ body.lock {
             content: '';
             width: 100%;
             height: 3px;
-            background-color: v.$accent-color;
+            background: v.$accent-color;
             bottom: -5px;
             left: 0;
             opacity: 0;
@@ -196,7 +199,7 @@ body.lock {
         padding: clamp(5px, 1vw, 45px) 0 clamp(5px, 1vw, 45px) clamp(5px, 1vw, 56px);
         @include m.flex(center, flex-start);
         gap: clamp(10px, 3vw, 35px);
-        background-color: rgba(255, 255, 255, .8);
+        background-color: rgba(255, 255, 255, 0.9);
         top: 7%;
         left: 35%;
     }
@@ -254,6 +257,7 @@ body.lock {
         @extend %text;
         display: block;
         text-align: center;
+
     }
 }
 
@@ -298,7 +302,8 @@ body.lock {
 
     &__text {
         max-width: clamp(300px, 60vw, 710px);
-        font-family: v.$item-font-family;
+        font-family: v.$text-font-family;
+        font-weight: 400;
         font-size: clamp(16px, 3vw, 32px);
         line-height: 1.43;
         letter-spacing: 0.04em;
@@ -321,9 +326,11 @@ body.lock {
     }
 
     &__subtitle {
-        font-family: v.$accent-font-family;
+        font-family: v.$title-font-family;
+        font-style: italic;
         font-size: clamp(16px, 2vw, 20px);
         letter-spacing: 0.08em;
+        font-weight: 400;
     }
 }
 
@@ -437,7 +444,7 @@ body.lock {
             clamp(30px, 4vw, 75px) 0 clamp(30px, 4vw, 75px) clamp(25px, 4vw, 70px);
         position: absolute;
         top: 10%;
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.9);
         left: 30%;
     }
 
@@ -457,6 +464,7 @@ body.lock {
         font-size: clamp(18px, 2vw, 24px);
         line-height: 2;
         margin-bottom: 5px;
+        font-weight: 400;
     }
 
     &__subtitle {
@@ -518,15 +526,20 @@ body.lock {
         }
 
         &-text {
-            font-family: v.$item-font-family, sans-serif;
+            font-family: v.$text-font-family, sans-serif;
+            font-weight: 400;
             font-size: clamp(12px, 1.5vw, 16px);
             line-height: 1.62;
+            opacity: 0.8;
         }
 
         &-author {
-            font-family: v.$accent-font-family;
+            font-family: v.$title-font-family;
+            font-weight: 400;
+            font-style: italic;
             font-size: clamp(16px, 2vw, 20px);
             letter-spacing: 0.08em;
+            font-weight: 400;
         }
     }
 }
@@ -567,12 +580,14 @@ body.lock {
             outline: none;
 
             &::placeholder {
-                font-family: v.$accent-font-family;
+                font-family: v.$title-font-family;
+                font-weight: 400;
+                font-style: italic;
                 color: v.$color-primary;
                 font-size: clamp(14px, 2vw, 18px);
                 line-height: 1.11;
                 letter-spacing: 0.08em;
-                opacity: .5;
+                opacity: 0.5;
             }
 
             &:focus {
@@ -643,6 +658,7 @@ body.lock {
 
     .text {
         color: #fff;
+        opacity: 0.6;
     }
 
     .link-accent {
@@ -667,8 +683,8 @@ body.lock {
         &__item {
             color: #fff;
 
-            &:not(:last-child)::after {
-                background-color: v.$accent-color-dark;
+            &::after {
+                background: linear-gradient(45deg, #53f3cd, transparent);
             }
         }
     }
@@ -700,7 +716,7 @@ body.lock {
         }
 
         &__box {
-            background-color: rgba(22, 25, 38, .8);
+            background-color: rgba(22, 25, 38, 0.9);
         }
 
         &__item {
@@ -759,7 +775,7 @@ body.lock {
 
     .promises {
         &__box {
-            background-color: rgba(22, 25, 38, 0.8);
+            background-color: rgba(22, 25, 38, 0.9);
         }
 
         &__title {
@@ -919,6 +935,10 @@ body.lock {
         &__content {
             flex-wrap: wrap;
 
+            &-text {
+                font-size: 16px;
+            }
+
             &-box {
                 justify-content: flex-start;
                 gap: 30px;
@@ -1001,12 +1021,12 @@ body.lock {
 
         &__box {
             max-width: 100%;
-            text-align: center;
+            text-align: left;
             position: static;
         }
 
         &__items {
-            justify-content: center;
+            justify-content: flex-start;
         }
 
         &__item {
